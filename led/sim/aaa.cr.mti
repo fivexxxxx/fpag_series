@@ -1,0 +1,15 @@
+E:/2025code/fpga/opensock/led/logic_gate.v {1 {vlog -work work -vopt -stats=none E:/2025code/fpga/opensock/led/logic_gate.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module logic_gate
+
+Top level modules:
+	logic_gate
+
+} {} {}} E:/2025code/fpga/opensock/led/tb_logic_gate.v {1 {vlog -work work -vopt -stats=none E:/2025code/fpga/opensock/led/tb_logic_gate.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module tb_logic_gate
+
+Top level modules:
+	tb_logic_gate
+
+} {} {}}

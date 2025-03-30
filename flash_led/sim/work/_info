@@ -1,0 +1,66 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/2025code/fpga/opensock/led/sim
+T_opt
+!s110 1743259605
+VCSQ`S^@gQ`z017[AMK`8D3
+04 12 4 work tb_flash_led fast 0
+=2-1008b1f6cc79-67e807d5-27c-2330
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vflash_led
+Z1 !s110 1743259536
+!i10b 1
+!s100 LWmg:ZTL8;j01g`gjjb4?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2Bn7]ZYb>mV3H?oRJJ2iX1
+Z3 dE:/2025code/fpga/opensock/flash_led/sim
+w1743259526
+8E:/2025code/fpga/opensock/flash_led/flash_led.v
+FE:/2025code/fpga/opensock/flash_led/flash_led.v
+!i122 7
+L0 1 32
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1743259536.000000
+!s107 E:/2025code/fpga/opensock/flash_led/flash_led.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/2025code/fpga/opensock/flash_led/flash_led.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vtb_flash_led
+R1
+!i10b 1
+!s100 MHC_T8:Ez3^`cRZKnj>C53
+R2
+InjZzCP?l^il5BenN`J9zM3
+R3
+w1743259222
+8E:/2025code/fpga/opensock/flash_led/tb_flash_led.v
+FE:/2025code/fpga/opensock/flash_led/tb_flash_led.v
+!i122 6
+L0 3 27
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/2025code/fpga/opensock/flash_led/tb_flash_led.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/2025code/fpga/opensock/flash_led/tb_flash_led.v|
+!i113 0
+R7
+R0
