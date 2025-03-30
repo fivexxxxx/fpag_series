@@ -2,12 +2,12 @@
 //仿真文件
 module tb_bin2bcd;
 
-reg                                 sclk;
-reg                                 s_rst_n;
-reg                                 bin_vld;
-reg         [6:0]                 bin_data;
-wire                                bcd_vld;
-wire        [7:0]                 bcd_data;
+reg                                 sclk            ;
+reg                                 s_rst_n         ;
+reg                                 bin_vld         ;
+reg         [6:0]                   bin_data        ;
+wire                                bcd_vld         ;
+wire        [7:0]                   bcd_data        ;
 
 
 initial begin
@@ -32,11 +32,11 @@ bin2bcd #(
     .BIN_WIDTH(7),
     .BCD_WIDTH(8)
 ) u_bin2bcd (
-    .sclk(sclk),
-    .s_rst_n(s_rst_n),
-    .bin_vld(bin_vld),
-    .bin_data(bin_data),
-    .bcd_vld(bcd_vld),
-    .bcd_data(bcd_data)
+    .sclk       (sclk       ),
+    .s_rst_n    (s_rst_n    ),
+    .bin_vld    (bin_vld    ),
+    .bin_data   (bin_data   ),
+    .bcd_vld    (bcd_vld    ),
+    .bcd_data   (bcd_data   )
 );
 endmodule

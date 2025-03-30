@@ -4,8 +4,6 @@ module  decode_3to8(
     output  reg [7:0]                  po_data         
 
 );
-
-
 always @(*) begin
     case (pi_data)
         0: po_data=8'b0000_0001;

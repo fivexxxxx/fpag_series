@@ -3,15 +3,15 @@
 module tb_logic_gate();
 
 //信号源，输入的信号
-reg test_port_a;
-reg test_port_b;
-reg test_port_c;
-
-//
-wire        test_rslt_e;
-wire        test_rslt_f;
-wire        test_rslt_g;
-wire        test_rslt_h;
+reg         test_port_a         ;
+reg         test_port_b         ;
+reg         test_port_c         ;
+            
+//          
+wire        test_rslt_e         ;
+wire        test_rslt_f         ;
+wire        test_rslt_g         ;
+wire        test_rslt_h         ;
 
 
 

@@ -5,7 +5,7 @@ module flash_led(
 
 );
 //localparam DELAY_1S = 'd49_999_999 ;//加速仿真，可以修改计数器上限'd49，以加快仿真速度 原来： 'd49_999_999
-localparam DELAY_1S = 'd49;
+localparam                  DELAY_1S    =       'd49;
 //50Mhz时钟，计数1s
 // t= 100/5=20ns
 reg [25:0]                  cnt                     ;

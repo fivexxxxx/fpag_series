@@ -1,16 +1,15 @@
-module key_led(
+
+module key_debounce(
     input                   sclk                    ,
     input                   s_rst_n                 ,
     input                   key                     ,
-    output reg              led                  
-
+    output reg              key_flag         
 );
-
-parameter       DELAY_10MS   =          'd50_000_0 ; //10ms
+parameter DELAY_10MS    =   'd50_000_0              ; //10ms
 
 
 reg [18:0]                  cnt_10ms                ;
-reg                         key_flag                ;                  
+
 //
 always@(posedge sclk or negedge s_rst_n) begin
     if(s_rst_n==1'b0) begin
@@ -35,15 +34,7 @@ always @(posedge sclk or negedge s_rst_n) begin
         key_flag <= 1'b0;
     end
 end
-// led 逻辑判断
-always @(posedge sclk or negedge s_rst_n) begin
-    if(s_rst_n == 1'b0) begin
-        led <= 1'b0;
-    end
-    else if(key_flag == 1'b1) begin
-        led <= ~led;
-    end
-end
+
 
 
 endmodule

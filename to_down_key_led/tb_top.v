@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module tb_key_led;
+module tb_top;
 //时钟和复位信号
 reg                     sclk                ; //时钟信号
 reg                     s_rst_n             ; //复位信号
@@ -16,7 +16,7 @@ initial begin
     s_rst_n             =              1;
 end
 
-always #5 sclk          =          ~sclk;
+always #5 sclk = ~sclk;
 
 //计数器计数
 always @(posedge sclk or negedge s_rst_n) begin
@@ -51,11 +51,11 @@ always @(posedge sclk or negedge s_rst_n) begin
 end
 
 //仿真参数设置
-defparam  key_led_inst.DELAY_10MS = 110; //仿真时大于100个时钟周期即可认为是10ms
+defparam  top_inst.u0_key_debounce_inst.DELAY_10MS = 110; //仿真时大于100个时钟周期即可认为是10ms
 
 
 
-key_led key_led_inst(
+top top_inst(
     .sclk    (  sclk                ),
     .s_rst_n (  s_rst_n             ),
     .key     (  key                 ),

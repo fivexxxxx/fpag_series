@@ -1,21 +1,21 @@
 //呼吸灯
 module breath_led
 (
-    input                       sclk                ,  //系统时钟
-    input                       s_rst_n             ,  //系统复位信号，低电平有效
-    output  reg [3:0]           led                   //led灯控制信号
+    input                       sclk                     ,  //系统时钟
+    input                       s_rst_n                  ,  //系统复位信号，低电平有效
+    output  reg [3:0]           led                        //led灯控制信号
 );
 //参数定义
-parameter DELAY_2US = 'd100 ;  //2us计数器最大值
-parameter DELAY_2MS = 'd1000 ;  //2ms计数器最大值
-parameter DELAY_2S  = 'd1000 ;  //2s计数器最大值
+parameter                       DELAY_2US =     'd100    ;  //2us计数器最大值
+parameter                       DELAY_2MS =     'd1000   ;  //2ms计数器最大值
+parameter                       DELAY_2S  =     'd1000   ;  //2s计数器最大值
 
 
 
-reg [6:0]                       cnt_2us             ;  //2us计数器
-reg [9:0]                       cnt_2ms             ;  //2ms计数器
-reg [9:0]                       cnt_2s              ;  //2s计数器
-reg                             cnt_4s              ;  //4s计数器
+reg [6:0]                       cnt_2us                  ;  //2us计数器
+reg [9:0]                       cnt_2ms                  ;  //2ms计数器
+reg [9:0]                       cnt_2s                   ;  //2s计数器
+reg                             cnt_4s                   ;  //4s计数器
 
 //2us计数器
 always @(posedge sclk or negedge s_rst_n)
